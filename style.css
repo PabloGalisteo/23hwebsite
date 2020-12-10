@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a,li {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+.logo-container {
+    flex: 1;
+}
+nav {
+    flex: 1;
+}
+
+.login {
+    cursor:  pointer;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius:3px;
+    border: 2px solid #000000;
+    color: #ffffff;
+    background: #b61b06;
+    width: 150px;
+    height:  50px;
+    cursor:  pointer;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius:3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.li:hover {
+    background: black;
+}
+
+.main-section {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #b61b06, #eb4d04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.intro-text p{
+    margin-top: 15px;
+    font-size: 22px;
+    color: #000000;
+}
+.cover {
+    height: 80vh;
+}
+.cover img{
+    filter: drop-shadow(0px 5px 3px rgb(0, 0, 0));
+    height: 100%;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-learn {
+     border: 2px solid #000000;
+     background: transparent;
+     color: #b61b06;
+     width: 150px;
+     height:  50px;
+     cursor:  pointer;
+     font-size: 16px;
+     font-weight: 800;
+     border-radius:3px;
+}
+
+.cta-learn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.cta-enroll {
+    border: 2px solid #b61b06;
+    color: #000000;
+    background: transparent;
+    width: 150px;
+    height:  50px;
+    cursor:  pointer;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius:3px;
+    margin: 30px 0px 0px 30px;
+}
+
+.cta-enroll:hover {
+    background: #b61b06;
+    color: #ffffff;
+}
+
+.stain {
+    position: absolute;
+    top: 31rem;
+    right: 35rem;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.about-h2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    font-size: 39px;
+    font-weight: 500;
+    background: linear-gradient(to right, #b61b06, #eb4d04);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(to right, #b61b06, #8a7b74);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5rem;
+}
+
+.features-paragraph {
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    margin-top: 3rem;
+    font-weight: 400;
+}
+
+.tasting img {
+    height: 100%;
+    padding: 0px 0px 0px 40px;
+}
+
+/* features boxes*/
+.box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    background: #cacaca;
+    color: #000000;
+    margin-top: 5rem;
+}
+.box p{
+    font-weight: 500;
+}
+
+.box2 p{
+    font-weight: 500;
+}
+
+.box2 {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    background: #fa9c7d;
+    color: #000000;
+    margin-top: 5rem;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+.box2 i {
+    margin-bottom: 10px;
+}
+
+
+
+/* responsivness */
+@media screen and (max-width: 1024px) {
+    .main-section {
+        flex-direction: column;
+    }
+    .introduction {
+        text-align: center;
+        margin-top: 5vh;
+    }
+    .intro-text h1 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .intro-text p {
+        margin-top: 50px;
+        font-size: 18px;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: right;
+        margin-right: 10%;
+    }
+    .login {
+        position: absolute;
+        top: 150px;
+        right: 10%;
+        width: 80px;
+        height: 40px;
+    }
+    .cta {
+        margin-bottom: 15px;
+        position: absolute;
+
+    }
+    .cover img {
+        margin-top: 12rem;
+        font-size: 50%;
+        height: 70%;
+    }
+    .box {
+        float: right;
+        width: 33.3%;
+        height: 100%;
+        padding: 50px 30px;
+        overflow: hidden;
+    }
+    .box2 {
+        float: right;
+        width: 33.3%;
+        height: 100%;
+        padding: 50px 30px;
+        overflow: hidden;
+    }
+    .about-h2 {
+        text-align: center;
+    }
+    .features-paragraph {
+        text-align: center;
+    }
+    .tasting-img {
+        background: 6px solid black;
+        font-size: 10%;
+        height: 20%;
+    }
+}
